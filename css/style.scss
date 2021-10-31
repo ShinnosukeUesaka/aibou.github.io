@@ -246,7 +246,10 @@
                         }
                     }
                     img {
-                        width: 90vw;
+                        width: 100%;
+                        @include mq(sm) {
+                            width: 90vw;
+                        }
                         // box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
                     }
                     @include mq(lg) {
