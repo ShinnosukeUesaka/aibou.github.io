@@ -1,253 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5LWJ34S');</script>
-  <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <title>AI英会話　AIbou</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="AI英会話アプリAIbou。アプリ甲子園優勝">
-    <meta name="author" content="Shinnosuke Uesaka">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="AI英会話AIbou" /> <!-- website name -->
-	<meta property="og:site" content="aibou.app" /> <!-- website link -->
-	<meta property="og:title" content="シャイでもできるAI英会話AIbou"/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="AIと英語を学ぼう。アプリ甲子園。" /> <!-- description shown in the actual shared post -->
-	<!--<meta name="twitter:card" content="summary_large_image">  to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>AI英会話アプリ AIbou</title>
-
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
-
-    <script src="js/bootstrap.min.js"></script>
-
-
-
-
-
-
+    <!-- og -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AIbou_english" />
+    <meta property="og:url" content="https://aibou.app/" />
+    <meta property="og:title" content="AI英会話アプリ AIbou" />
+    <meta property="og:description" content="シャイでも初心者でもできるAI英会話アプリ　AIbou。チャットを送ると、AIがシチュエーションに合わせた返信をしてくれます。いつでも、どこでも、あなたが好きなタイミングで、自然な英語が学べます。" />
+    <meta property="og:image" content="https://www.aibou.app/img/og_image.jpg" />
 </head>
+
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5LWJ34S"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container">
-
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Pavo</a> -->
-
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>
-
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="mailto:aibou.english@gmail.com">コンタクト <span class="sr-only">(current)</span></a>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform?usp=sf_link">事前登録</a>
-                    </li>
-                </ul>
-                <span class="nav-item app-store-icons">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform?usp=sf_link">
-                        <i class="fab fa-apple"></i>
+    <div class="all">
+        <div class="top_section">
+            <div class="left">
+                <div class="left_inner">
+                    <img src="img/logo.png" class="logo">
+                    <p class="subtitle">シャイでもできる英会話アプリ</p>
+                    <h1>AIbou</h1>
+                    <p class="disc"> チャットを送ると、
+                        <br> AIがシチュエーションに合わせた返信をしてくれます。
+                        <br> いつでも、どこでも、あなたが好きなタイミングで、自然な英語が学べます。 まさに、最高の"あいぼう"です。
+                    </p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform" target="_blank">
+                        <div class="join_button">
+                            <div class="join_button_inner">
+                                <img src="img/triangle.png" class="triangle">
+                                <p>事前登録</p>
+                            </div>
+                        </div>
                     </a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform?usp=sf_link">
-                        <i class="fab fa-android"></i>
-                    </a>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+                </div>
 
+            </div>
+            <div class="right">
+                <img src="img/top_img.png">
+            </div>
+        </div>
+        <div class="coming_soon_secsion">
+            <div class="coming_soon_inner">
+                <p class="coming_soon">近日公開</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform" target="_blank">
+                    <div class="join_button">
+                        <p>事前登録はこちら</p>
+                    </div>
+                    <p class="contact">Contact</p>
+                    <p class="mail">aibou.english@gmail.com</p>
+                </a>
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="container">
+            </div>
+        </div>
+        <div class="dics_secsion">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h1 class="h1-large">シャイでもできる<br>英会話アプリAIbou</h1>
-                        <p class="p-large">チャットを送ると、<br>
-                          AIがシチュエーションに合わせた返信をしてくれます。<br>
-                          いつでも、どこでも、あなたが好きなタイミングで、自然な英語が学べます。
-                          まさに、最高の"あいぼう"です。</p>
-                        <a class="btn-solid-lg" href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform?usp=sf_link"><i class="fab fa-apple"></i>事前登録</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/header-smartphone.webp" alt="アプリ画面">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+                <div class="innners">
+                    <div class="text_div">
+                        <p class="title">あなたに最適な英会話を</p>
+                        <p class="content">
+                            こんな定型文ばかり勉強して本当に役に立つのかな？
+                            <br> 英語学習をしていてそう思ったことはありませんか？
+                            <br> でも英会話教室はなんだか気後れするしめんどう。
+                            <br>
+                            <br> そんなあなたにぴったりのアプリ。
+                        </p>
+                    </div>
 
-
-    <!-- Introduction -->
-    <div class="basic-1">
-        <div class="container">
+                </div>
+                <div class="innners">
+                    <img src="img/preview1.jpg">
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>こんな定型文ばかり勉強して本当に役に立つのかな？<br>
-英語学習をしていてそう思ったことはありませんか？<br>
-でも英会話教室はなんだか気後れするしめんどう。<br>
-そんなあなたにピッタリのアプリ、<br>
-それがAI英会話アプリAIbouです。<br><br>
-近日リリース予定！
-</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of introduction -->
-
-
-    <!-- Features -->
-    <div id="features" class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/features-icon-3.svg" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">世界最先端のAI,GPT３を導入。リアルな英語</h5>
-                            <p>世界最先端のAIを活用することで、ネイティブとほとんど変わらない自然な英会話を実現。</p>
+                <div class="innners">
+                    <img src="img/preview2.jpg" class="second">
+                </div>
+                <div class="innners">
+                    <div class="text_div">
+                        <p class="title">豊富なコースを提供</p>
+                        <p class="content">
+                            友達と好きな映画について
+                            <br><br> 地球温暖化についての議論
+                            <br><br> 電話での病院予約
+                            <br><br> カフェでの注文
+                            <br><br> など
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="go_top" id="scrollTop">
+            <div>
+                <img src="img/goTop.svg" width="30" height="30">
+            </div>
+        </div>
+        <div class="tools_secsion">
+            <p class="tools_secsion_title">AIbouのお助け機能</p>
+            <div class="tool_all">
+                <div class="colums">
+                    <div class="tools">
+                        <div class="tools_inner">
+                            <div class="top">
+                                <img src="img/tool1.png">
+                            </div>
+                            <div class="bottom">
+                                <p class="title">文法修正</p>
+                                <p class="content">文脈を判断した上で、文法や表現など様々な観点から 自動でメッセージを修正
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/features-icon-4.svg" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">間違えても大丈夫</h5>
-                            <p>相手はAIだから、間違えても心配ありません。自分の納得のいくまで何度でも言い直すことができます。また、AIの英語が分からなくても何度でも聞き直せます。</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="images/features-icon-5.svg" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">使える英語が身に付く</h5>
-                            <p>今までの英会話アプリは台本通りに読み上げていただけ。しかし、実際の英会話はそうはいきません。AIが無限通りの返答をしてくれることで、よりリアルな会話を体験できます。</p>
+                    <div class="tools">
+                        <div class="tools_inner">
+                            <div class="top">
+                                <img src="img/tool3.png">
+                            </div>
+                            <div class="bottom">
+                                <p class="title">辞書機能</p>
+                                <p class="content">わからない単語の意味や例文、類義語などをすぐに調べることが可能</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- end of card -->
+                </div>
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of features -->
-
-
-
-    <!-- Details 2 -->
-    <div class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <h2>豊富な種類のコース</h2>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="media-body">友達と好きな映画について英語で話す</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="media-body">地球温暖化について英語で議論</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-chevron-right"></i>
-                                <div class="media-body">電話で病院の予約をする</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg popup-with-move-anim" href="https://docs.google.com/forms/d/e/1FAIpQLSdOj-vIoaPO1ep7h4AA3yPfDJAq0jXdPQA3EiDnzeLjDNkxLw/viewform?usp=sf_link">事前登録</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of details 2 -->
+                <div class="colums">
+                    <div class="tools">
+                        <div class="tools_inner">
+                            <div class="top">
+                                <img src="img/tool2.png">
+                            </div>
+                            <div class="bottom">
+                                <p class="title">言い換え機能</p>
+                                <p class="content">様々な言い換えを提案<br>ネイティブの使う自然な表現を知ることができる</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools">
+                        <div class="tools_inner">
+                            <div class="top">
+                                <img src="img/tool4.png">
+                            </div>
+                            <div class="bottom">
+                                <p class="title">回答例生成</p>
+                                <p class="content">なんと返信すれば良いかわからないときに...<br>新しい表現を学べる</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-    <div class="container">
-    <h2>英語学習を支えるAIbouのお助け機能</h1>
-    <div class="row mt-5">
-      <div class="col-lg-6 col-sm-12"><img src="images/presentation001.webp" alt="アプリ甲子園機能1" class="img-fluid"></div>
-      <div class="col-lg-6 col-sm-12"><img src="images/presentation002.webp" alt="アプリ甲子園機能2" class="img-fluid"></div>
-      <div class="w-100"></div>
-      <div class="col-lg-6 col-sm-12"><img src="images/presentation003.webp" alt="アプリ甲子園機能3" class="img-fluid"></div>
-      <div class="col-lg-6 col-sm-12"><img src="images/presentation004.webp" alt="アプリ甲子園機能4" class="img-fluid"></div>
+
+            </div>
+        </div>
+        <div class="awards_secsion">
+            <p class="awards_title">アプリ甲子園2021<br>優勝・総務大臣賞 獲得</p>
+            <a href="https://youtu.be/QO37sMY_mwU" target="_blank">
+                <div class="go_video">
+                    <p>発表動画はこちら</p>
+                </div>
+            </a>
+        </div>
+        <div class="copyright_secsion">
+            <p>©︎AIbouTeam 2021.</p>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
     </div>
-  </div>
-
-<center>
-<h2 class="mt-5">アプリ甲子園2021優勝</h2>
-<p>AIbou、アプリ甲子園で優勝・総務大臣賞を受賞。</p>
-<iframe loading="lazy" width="560" height="315", style="width: 70%" src="https://www.youtube.com/embed/QO37sMY_mwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-</center>
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <p class="p-small statement">Copyright © AIbou Team. aibou.english@gmail.com</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
-
-
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>
