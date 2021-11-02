@@ -197,15 +197,20 @@
                 display: flex;
                 @include mq(lg) {
                     display: block;
+                    position: static;
                 }
                 margin: 200px 0;
+                @include mq(sm) {
+                    margin: 50px 0;
+                }
                 .innners {
                     width: 50vw;
                     position: relative;
                     @include mq(lg) {
-                        width: 90vw;
-                        min-height: 58vw;
+                        // min-height: 58vw;
+                        width: 100%;
                         text-align: center;
+                        position: static;
                     }
                     .text_div {
                         position: absolute;
@@ -215,8 +220,10 @@
                         -webkit-transform: translateY(-50%) translateX(-50%);
                         text-align: left;
                         @include mq(lg) {
-                            position: relative;
-                            margin: 100px 20px;
+                            position: static;
+                            margin: 50px 20px;
+                            transform: none;
+                            -webkit-transform: none;
                         }
                         .title {
                             font-size: 22px;
@@ -225,7 +232,7 @@
                                 font-size: 18px;
                             }
                             @include mq(sm) {
-                                margin-top: 200px;
+                                margin-top: 50px;
                             }
                         }
                         .content {
@@ -240,9 +247,15 @@
                     }
                     img {
                         width: 100%;
+                        @include mq(sm) {
+                            width: 90vw;
+                        }
                         // box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
                     }
                     @include mq(lg) {
+                        img.first {
+                            margin-right: 10vw;
+                        }
                         img.second {
                             margin-left: 10vw;
                         }
